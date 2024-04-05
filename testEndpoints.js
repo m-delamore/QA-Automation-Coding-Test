@@ -3,7 +3,7 @@ const { sortNumbers, sumNumbers } = require('./endpoints.js');
 
 describe('sortNumbers', function() {
     
-    it('is able to arrange an array of 10 unique numbers in ascending order', function() {
+    it('is able to arrange an array of 10 unique numbers which includes 0 and 100 in ascending order', function() {
         const input = [100, 18, 25, 46, 81, 73, 20, 35, 0, 28];
         const expectedOutput = [0, 18, 20, 25, 28, 35, 46, 73, 81, 100];
         assert.deepEqual(sortNumbers(input), expectedOutput);
@@ -60,6 +60,14 @@ describe('sumNumbers', function() {
         const num1 = 37;
         const num2 = 99;
         const expectedSum = num1 + num2;
+        output = sumNumbers(num1, num2);
+        assert.strictEqual(output, expectedSum);
+    });
+
+    it('returns the correct sum of of 0 and 100', function() {
+        const num1 = 0;
+        const num2 = 100;
+        const expectedSum = 100;
         output = sumNumbers(num1, num2);
         assert.strictEqual(output, expectedSum);
     });

@@ -2,7 +2,7 @@
   "name": "qa-automation-coding-test",
   "version": "1.0.0",
   "description": "",
-  "main": "sortNumbers.js",
+  "main": "testEndpoints.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
