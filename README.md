@@ -19,8 +19,8 @@ The following are the steps to clone the repository and run the mocha test scrip
 
 2. With the Terminal still open, navigate to the directory where the project was cloned/installed in the terminal using the cd command:
 
-       cd path\to\directory
+       cd QA-Automation-Coding-Test
 
-3. To run the test scripts, use the following command in the terminal while still in the project directory:
+3. When you are in the project folder, you can run the test scripts with the following command:
 
        npx mocha testEndpoints.js
