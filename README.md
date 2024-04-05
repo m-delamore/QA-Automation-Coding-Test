@@ -5,21 +5,22 @@ Prerequisites
 - Node.js
 The system requires Node.js to run the project. You can install it here - https://nodejs.org/en/download
 
-Installation and Usage
+Installation and Usage:
+
 The following are the steps to clone the repository and run the mocha test scripts. The mocha module is already installed locally in the project repository.
 
 1. Clone the repository using the git command:
 
-If your computer has 'git' installed, open the Terminal (or Windows Powershell) and type in the following command into the terminal. You may want to change to your desired directories before doing so.
+   If your computer has 'git' installed, open the Terminal (or Windows Powershell) and type in the following command into the terminal. You may want to change to your desired directories before doing so.
 
-   git clone https://github.com/m-delamore/QA-Automation-Coding-Test.git
+      | git clone https://github.com/m-delamore/QA-Automation-Coding-Test.git |
 
-Otherwise, you can go here https://github.com/m-delamore/QA-Automation-Coding-Test and download the zip file.
+   Otherwise, you can go here https://github.com/m-delamore/QA-Automation-Coding-Test and download the zip file.
 
 2. With the Terminal still open, navigate to the directory where the project was cloned/installed in the terminal using the cd command:
 
-   cd path\to\directory
+      | cd path\to\directory |
 
 3. To run the test scripts, use the following command in the terminal while still in the project directory:
 
-   npx mocha testEndpoints.js
+      | npx mocha testEndpoints.js |
