@@ -12,7 +12,6 @@ function generateTenNumbers(){
 }
 
 function sortNumbers(arrayObj) {
-    
     // Have to first ensure that there are only 10 items in the array.
     if (arrayObj.length !== 10) {
         throw new Error("Array must contain exactly 10 items only.");
@@ -47,10 +46,9 @@ function sortNumbers(arrayObj) {
 }
 
 function sumNumbers(num1, num2) {
-
     // Ensure both arguments are of 'number' data type.
-    if (typeof num1 !== 'number' || typeof num1 !== 'number') {
-        throw new Error("There is one or more items in the array that are not numbers.");
+    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+        throw new Error("One of the inputs are not numbers.");
     }
     
     // Ensure both numbers are between 0 and 100
@@ -64,11 +62,6 @@ function sumNumbers(num1, num2) {
     // Return the sum
     return sum;
 }
-
-
-// numbers = [100, 18, 25, 46, 81, 73, 20, 35, 1, 28]
-// generateTenNumbers();
-// console.log(sortNumbers(numbers));
 
 module.exports = {
     sortNumbers: sortNumbers,
